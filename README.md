@@ -50,7 +50,33 @@ We ran five automated tests covering growth, value, blend, missing-data handling
 
 The comparisons show that the rules can distinguish some financial characteristics across companies. However, the assessments are educational screening indicators, **not forecasts of future returns**. Broad valuation thresholds may be less informative across different sectors, and favorable fundamental signals do not guarantee investment success. AI-generated explanations may also contain errors and require verification.
 
-**End-to-end GPT-4o-mini report testing remains pending API access.** The preliminary testing above evaluates the Python strategy logic and market-data integration, not the complete report-generation workflow.
+### Generative AI Integration Testing
+
+The complete FinAgent workflow was successfully tested
+using Apple (AAPL).
+
+The application retrieved SEC filing data, processed
+141 text chunks through FinBERT, collected financial
+metrics from Yahoo Finance, and generated a structured
+investment brief using GPT-4o-mini.
+
+The generated report successfully incorporated:
+
+- Short-term investment outlook (0–12 months)
+- Long-term investment outlook (3–5 years)
+- Growth versus value classification
+- Supporting financial metrics and explanations
+
+The test confirmed that the Python-based investment
+classifications were incorporated into the
+AI-generated report.
+
+A key limitation identified was that negative sentiment
+in corporate risk disclosures can be misinterpreted as
+negative overall market sentiment. This highlights
+the importance of human oversight when evaluating
+generative AI outputs.
+
 
 ## Installation and Usage
 
