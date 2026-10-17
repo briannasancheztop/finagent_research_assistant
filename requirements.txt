@@ -1,0 +1,12 @@
+langchain==1.3.4
+langchain-openai==1.2.2
+langchain-community==0.4.2
+openai==2.41.0
+sec-edgar-downloader==5.1.0
+transformers
+torch
+yfinance==1.4.1
+python-dotenv==1.2.2
+tiktoken==0.13.0
+numpy
+pandas
