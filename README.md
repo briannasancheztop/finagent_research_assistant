@@ -124,6 +124,6 @@ The accuracy of FinAgent depends on the quality and availability of SEC filings 
 
 ## Project Team
 
-- Faye Corpew
+- Faye Corprew
 - Ramon Dario
 - Brianna Sanchez
